@@ -14,6 +14,7 @@ var Logger = require('winston');
 var npid = require('npid');
 
 
+
 if (cluster.isMaster) {
   Logger.log("Master is forking workers");
   for (var i=0; i<numCPUs; ++i) {
@@ -44,13 +45,18 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 
+app.get('/lamp-on', routes.lamp_on)
 
 subcategory_ids = [  ];
 
 app.get('/ping', routes.ping);
 
-app.listen(app.get('port'), function(){
-  Logger.log("Express".green.bold + " server listening on port " + (app.get('port')+ "").green.bold);
-});
+app.listen(app.get('port'));
+
+// app.listen(app.get('port'), function(){
+//   Logger.log("Express".green.bold + " server listening on port " + (app.get('port')+ "").green.bold);
+// });
+
+
 
 Logger.log("Started.");
