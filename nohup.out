@@ -2225,3 +2225,39 @@ util.puts: Use console.log instead
   params: [] }
 util.puts: Use console.log instead
 
+Loading env from: ./config.json
+Loading env from: ./config.json
+events.js:85
+      throw er; // Unhandled 'error' event
+            ^
+Error: bind EACCES
+    at exports._errnoException (util.js:746:11)
+    at cb (net.js:1178:33)
+    at rr (cluster.js:592:14)
+    at Worker.<anonymous> (cluster.js:563:9)
+    at process.<anonymous> (cluster.js:692:8)
+    at process.emit (events.js:129:20)
+    at handleMessage (child_process.js:324:10)
+    at Pipe.channel.onread (child_process.js:352:11)
+Loading env from: ./config.json
+Loading env from: ./config.json
+Loading env from: ./config.json
+Loading env from: ./config.json
+events.js:85
+      throw er; // Unhandled 'error' event
+            ^
+Error: bind EACCES
+    at exports._errnoException (util.js:746:11)
+    at cb (net.js:1178:33)
+    at rr (cluster.js:592:14)
+    at Worker.<anonymous> (cluster.js:563:9)
+    at process.<anonymous> (cluster.js:692:8)
+    at process.emit (events.js:129:20)
+    at handleMessage (child_process.js:324:10)
+    at Pipe.channel.onread (child_process.js:352:11)
+Loading env from: ./config.json
+Loading env from: ./config.json
+Loading env from: ./config.json
+Loading env from: ./config.json
+Loading env from: ./config.json
+Loading env from: ./config.json

@@ -21,6 +21,7 @@ $(function(){
           console.log(data);
         },
         error: function(data){
+	    $(".state-icon").attr("src", "/images/lamp-on.png")
             //This is where I get as my backend throws a 400 on me due to the screwed up json
             console.log(data);
         }
@@ -49,6 +50,7 @@ $(function(){
           console.log(data);
         },
         error: function(data){
+	    $(".state-icon").attr("src", "/images/lamp-off.png")
             //This is where I get as my backend throws a 400 on me due to the screwed up json
             console.log(data);
         }

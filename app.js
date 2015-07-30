@@ -29,7 +29,7 @@ Logger.log("Initiating worker, pid:" + process.pid);
 
 
 app.configure(function(){
-  app.set('port', process.env.PORT || 3000);
+  app.set('port', process.env.PORT || 80);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   app.use(express.favicon());
@@ -46,7 +46,7 @@ app.configure('development', function(){
 app.get('/', routes.index);
 
 app.get('/lamp-on', routes.lamp_on)
-app.get('/lamp-on', routes.lamp_off)
+app.get('/lamp-off', routes.lamp_off)
 
 subcategory_ids = [  ];
 
