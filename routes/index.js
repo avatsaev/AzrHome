@@ -14,9 +14,15 @@ exports.index = function(req, res){
 
 
 exports.lamp_on = function(req, res){
-  console.log(req);
-  exec("sh /Users/avatsaev/test/test.sh", puts);
+  //exec("sh /Users/avatsaev/test/test.sh");
+  exec("sudo /home/pi/AzrLamp/on")
   res.send("lamp-on!", 200);
+};
+
+exports.lamp_off = function(req, res){
+  //exec("sh /Users/avatsaev/test/test.sh");
+  exec("sudo /home/pi/AzrLamp/off")
+  res.send("lamp-off!", 200);
 };
 
 exports.ping = function(req, res){

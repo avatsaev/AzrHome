@@ -46,6 +46,7 @@ app.configure('development', function(){
 app.get('/', routes.index);
 
 app.get('/lamp-on', routes.lamp_on)
+app.get('/lamp-on', routes.lamp_off)
 
 subcategory_ids = [  ];
 
