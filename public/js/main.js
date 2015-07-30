@@ -17,7 +17,8 @@ $(function(){
         async: false,
         data: JSON.stringify(jsonData),
         success: function(data){
-            console.log(data);
+          $(".state-icon").attr("src", "/images/lamp-on.png")
+          console.log(data);
         },
         error: function(data){
             //This is where I get as my backend throws a 400 on me due to the screwed up json
@@ -44,7 +45,8 @@ $(function(){
         async: false,
         data: JSON.stringify(jsonData),
         success: function(data){
-            console.log(data);
+          $(".state-icon").attr("src", "/images/lamp-on.png")
+          console.log(data);
         },
         error: function(data){
             //This is where I get as my backend throws a 400 on me due to the screwed up json
